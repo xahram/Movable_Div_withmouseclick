@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        .box-div {
+            transition: left 1s linear, position 1s cubic-bezier(0.23, 1, 0.320, 1);
+        }
+
+        #body {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .divo {
+            height: 200px;
+            width: 100vw;
+            background-color: blue;
+            margin: 0.2% 0.2%;
+            text-align: center;
+        }
+
+        #box-shadow-div {
+            position: -webkit-sticky ;
+            position: sticky;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* box-shadow: 0 0 10px 10px black; */
+            top: 49%;
+            left: 48.85%;
+            /* transition: top 2s cubic-bezier(0.075, 0.82, 0.165, 1) ,left  2s cubic-bezier(0.165, 0.84, 0.44, 1)  ; */
+            transition: left 2s cubic-bezier(0.23, 1, 0.320, 1), top 2s cubic-bezier(0.23, 1, 0.320, 1);
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <div class="divo" >
+        <p>THis is div 1</p>
+        <p>THis is div 1</p>
+    </div>
+    <div class="divo" >
+        <p>THis is div 2</p>
+        <p>THis is div 2</p>
+    </div>
+    <div class="divo" >
+        <p>THis is div 3</p>
+        <p>THis is div 3</p>
+    </div>
+    <div class="divo" >
+        <p>THis is div 4</p>
+        <p>THis is div 4</p>
+    </div>
+    <div class="divo" >
+        <p>THis is div 5</p>
+        <p>THis is div 5</p>
+    </div>
+    <div id="box-shadow-div"></div>
+    <!-- <div style="height: 200vh; width: 200vw; background-color: blue;">
+        <div id="box-shadow-div"></div>
+    </div> -->
+</body>
+<script src='./index.js'></script>
+
+</html>
